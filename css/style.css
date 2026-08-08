@@ -394,14 +394,15 @@ body {
 .pi-image {
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.15),
-            rgba(0, 0, 0, 0.15)
+            rgba(0, 0, 0, 0.10),
+            rgba(0, 0, 0, 0.10)
         ),
         url("../images/professor.jpg");
 
     background-size: cover;
 
-    background-position: center;
+    background-position: center top;
+    min-height: 550px;
 }
 
 .pi-content {
