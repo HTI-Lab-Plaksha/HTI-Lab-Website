@@ -394,8 +394,8 @@ body {
 .pi-image {
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.10),
-            rgba(0, 0, 0, 0.10)
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15)
         ),
         url("../images/professor.jpg");
 
