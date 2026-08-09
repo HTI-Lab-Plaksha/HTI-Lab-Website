@@ -970,6 +970,137 @@ footer {
     .section {
         padding: 65px 6%;
     }
+   /* =====================================================
+   INNER PAGE
+   ===================================================== */
+
+.page-header {
+    min-height: 420px;
+    padding: 160px 8% 100px;
+    display: flex;
+    align-items: center;
+    background: #f4f4f2;
+}
+
+.page-header h1 {
+    font-size: clamp(60px, 8vw, 110px);
+    line-height: 0.95;
+    margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.page-header p {
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* PEOPLE PAGE */
+
+.people-page {
+    padding: 100px 8%;
+}
+
+.person-card {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    min-height: 600px;
+    background: #f4f4f2;
+}
+
+.person-image {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.person-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.person-info {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person-info h2 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.person-info h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.person-info p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.team-section {
+    padding-top: 120px;
+}
+
+.team-section h2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.team-section p {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .page-header {
+        min-height: 350px;
+        padding: 120px 6% 70px;
+    }
+
+    .page-header h1 {
+        font-size: 60px;
+    }
+
+    .people-page {
+        padding: 60px 6%;
+    }
+
+    .person-card {
+        grid-template-columns: 1fr;
+    }
+
+    .person-image {
+        height: 450px;
+    }
+
+    .person-info {
+        padding: 50px 30px;
+    }
+
+    .person-info h2 {
+        font-size: 40px;
+    }
+
+}
 
     .pi-image {
         min-height: 430px;
