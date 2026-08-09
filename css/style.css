@@ -2,11 +2,17 @@
 /* =========================================================
    HTI LAB — MAIN STYLES
    ========================================================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 html {
@@ -27,7 +33,9 @@ body {
 
 .navbar {
     width: 100%;
-    padding: 22px 7%;
+    max-width: 100%;
+
+    padding: 22px 6%;
 
     display: flex;
     justify-content: space-between;
@@ -44,11 +52,15 @@ body {
 .logo {
     display: flex;
     align-items: center;
+
+    flex-shrink: 0;
 }
 
 .logo img {
-    width: 150px;
+    width: 145px;
+    max-width: 100%;
     height: auto;
+
     display: block;
 }
 
@@ -75,22 +87,26 @@ body {
    ========================================================= */
 
 .hero {
+    width: 100%;
     min-height: 680px;
 
     display: flex;
     align-items: center;
 
-    padding: 100px 10%;
+    padding: 100px 8%;
 
     background:
         linear-gradient(
-            rgba(15, 15, 15, 0.68),
-            rgba(15, 15, 15, 0.68)
+            rgba(15, 15, 15, 0.60),
+            rgba(15, 15, 15, 0.60)
         ),
         url("../images/lab.jpg");
 
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: white;
 }
 
 .hero-content {
