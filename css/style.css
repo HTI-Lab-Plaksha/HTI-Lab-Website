@@ -1269,134 +1269,449 @@ footer {
 }
 
 
-/* =====================================================
-   PEOPLE GRID
-   ===================================================== */
+/* =========================================================
+   PEOPLE PAGE
+========================================================= */
 
-.people-grid {
+
+/* HERO
+--------------------------------------------------------- */
+
+.people-hero {
+    min-height: 500px;
+    background: #f3f3f0;
+    display: flex;
+    align-items: center;
+    padding: 150px 8% 100px;
+}
+
+.people-hero-content {
+    max-width: 850px;
+}
+
+.people-hero h1 {
+    font-size: clamp(60px, 8vw, 105px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+.people-hero p {
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* CATEGORY NAVIGATION
+--------------------------------------------------------- */
+
+.people-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #d7d7d7;
+
+    background: #ffffff;
+}
+
+.people-nav a {
+    display: inline-block;
+
+    padding: 25px 30px 25px 0;
+
+    margin-right: 30px;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+.people-nav a:hover {
+    color: #777;
+}
+
+
+/* GENERAL SECTION
+--------------------------------------------------------- */
+
+.people-section {
+    padding: 120px 8%;
+}
+
+.people-light {
+    background: #f3f3f0;
+}
+
+
+/* SECTION INTRO
+--------------------------------------------------------- */
+
+.section-intro {
+    max-width: 850px;
+    margin-bottom: 65px;
+}
+
+.section-intro > span {
+    display: block;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    color: #777;
+
+    margin-bottom: 20px;
+}
+
+.section-intro h2 {
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin: 0 0 25px;
+
+    font-weight: 600;
+}
+
+.section-intro p {
+    max-width: 700px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+    margin: 0;
+}
+
+
+/* PROFESSOR
+--------------------------------------------------------- */
+
+.professor-profile {
+    max-width: 1250px;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+
+    grid-template-columns: 46% 54%;
+
+    background: #ffffff;
 }
 
-.person-card {
-    background: #fff;
-}
+.professor-photo {
+    height: 650px;
 
-.person-card-image {
-    width: 100%;
-    height: 380px;
     overflow: hidden;
 }
 
-.person-card-image img {
+.professor-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center top;
+
     display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+}
+
+.professor-info {
+    padding: 75px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.person-label {
+    display: block;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    color: #777;
+
+    margin-bottom: 20px;
+}
+
+.professor-info h3 {
+    font-size: 55px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin: 0 0 15px;
+}
+
+.professor-info .position {
+    font-size: 21px;
+
+    color: #666;
+
+    margin: 0 0 30px;
+}
+
+.professor-info p {
+    max-width: 600px;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    color: #444;
+}
+
+.professor-info a {
+    margin-top: 20px;
+
+    color: #111;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.professor-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* THREE COLUMN PEOPLE GRID
+--------------------------------------------------------- */
+
+.people-grid {
+    max-width: 1250px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* PERSON CARD
+--------------------------------------------------------- */
+
+.member-card {
+    background: #ffffff;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* PERSON IMAGE
+--------------------------------------------------------- */
+
+.member-image {
+    width: 100%;
+
+    height: 390px;
+
+    overflow: hidden;
+
+    background: #e7e7e4;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+
     transition: transform 0.5s ease;
 }
 
-.person-card:hover .person-card-image img {
+.member-card:hover .member-image img {
     transform: scale(1.03);
 }
 
-.person-card-content {
-    padding: 35px;
+
+/* PERSON INFORMATION
+--------------------------------------------------------- */
+
+.member-info {
+    padding: 32px;
 }
 
-.person-card-content h3 {
-    font-size: 30px;
-    margin: 5px 0 10px;
+.member-info > span {
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+
+    font-weight: 600;
+
+    color: #777;
+
+    margin-bottom: 14px;
 }
 
-.person-card-content .person-position {
-    font-size: 16px;
+.member-info h3 {
+    font-size: 28px;
+
+    line-height: 1.1;
+
+    margin: 0 0 10px;
+
+    letter-spacing: -0.5px;
+}
+
+.member-position {
+    font-size: 15px;
+
+    color: #555;
+
+    margin: 0 0 15px;
+}
+
+.member-info p:not(.member-position) {
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    color: #666;
+
     margin-bottom: 15px;
 }
 
-.person-card-content p {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #666;
+.member-info a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.member-info a:hover {
+    text-decoration: underline;
 }
 
 
-/* =====================================================
-   ALUMNI
-   ===================================================== */
+/* ALUMNI
+--------------------------------------------------------- */
+
+.alumni-section {
+    background: #ffffff;
+}
 
 .alumni-list {
     max-width: 1100px;
 }
 
-.alumni-item {
+.alumni-row {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
+
+    justify-content: space-between;
+
     gap: 30px;
-    padding: 35px 0;
-    border-bottom: 1px solid #ccc;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid #d5d5d5;
 }
 
-.alumni-item:first-child {
-    border-top: 1px solid #ccc;
+.alumni-row:first-child {
+    border-top: 1px solid #d5d5d5;
 }
 
-.alumni-item h3 {
-    font-size: 25px;
+.alumni-row h3 {
     margin: 0 0 8px;
+
+    font-size: 24px;
 }
 
-.alumni-item p {
+.alumni-row p {
     margin: 0;
+
     color: #666;
+
+    font-size: 15px;
 }
 
-.alumni-item span {
+.alumni-row > span {
     color: #777;
+
+    font-size: 14px;
+
     white-space: nowrap;
 }
 
 
-/* =====================================================
-   ACTIVE NAVIGATION
-   ===================================================== */
+/* ACTIVE NAVIGATION
+--------------------------------------------------------- */
 
 .nav-links a.active {
     font-weight: 600;
 }
 
 
-/* =====================================================
-   MOBILE
-   ===================================================== */
+/* =========================================================
+   TABLET
+========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     .people-hero {
-        padding: 130px 6% 80px;
+        padding: 130px 6% 90px;
     }
 
     .people-section {
-        padding: 80px 6%;
+        padding: 90px 6%;
     }
 
-    .people-navigation {
+    .people-nav {
         padding: 0 6%;
     }
 
-    .professor-card {
+    .professor-profile {
         grid-template-columns: 1fr;
     }
 
     .professor-photo {
-        height: 500px;
-    }
-
-    .professor-details {
-        padding: 50px 35px;
+        height: 550px;
     }
 
     .people-grid {
@@ -1406,47 +1721,80 @@ footer {
 }
 
 
-@media (max-width: 600px) {
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .people-hero {
+        min-height: 420px;
+
+        padding: 120px 6% 70px;
+    }
 
     .people-hero h1 {
         font-size: 55px;
+
         letter-spacing: -2px;
     }
 
-    .people-navigation {
-        display: block;
-        padding: 15px 6%;
+    .people-hero p {
+        font-size: 17px;
     }
 
-    .people-navigation a {
-        display: inline-block;
+    .people-nav {
+        padding: 10px 6%;
+    }
+
+    .people-nav a {
         padding: 10px 15px 10px 0;
+
         margin-right: 10px;
     }
 
-    .people-grid {
-        grid-template-columns: 1fr;
+    .people-section {
+        padding: 75px 6%;
     }
 
-    .person-card-image {
-        height: 400px;
+    .section-intro h2 {
+        font-size: 45px;
+
+        letter-spacing: -2px;
     }
 
     .professor-photo {
         height: 450px;
     }
 
-    .professor-details h3 {
+    .professor-info {
+        padding: 45px 30px;
+    }
+
+    .professor-info h3 {
         font-size: 40px;
     }
 
-    .alumni-item {
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .member-image {
+        height: 430px;
+    }
+
+    .member-info {
+        padding: 28px;
+    }
+
+    .alumni-row {
         display: block;
     }
 
-    .alumni-item span {
+    .alumni-row > span {
         display: block;
-        margin-top: 15px;
+
+        margin-top: 12px;
     }
 
 }
