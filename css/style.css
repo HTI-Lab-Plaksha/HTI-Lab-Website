@@ -1,53 +1,54 @@
-
-```css
 /* =========================================================
    HTI LAB — MAIN STYLES
+   Human-Technology Interaction Lab
+   Plaksha University
    ========================================================= */
-html {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
-body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-}
+/* =========================================================
+   RESET
+   ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     width: 100%;
     max-width: 100%;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
     font-family: Arial, Helvetica, sans-serif;
     color: #181818;
     background: #ffffff;
     line-height: 1.7;
+
+    overflow-x: hidden;
 }
 
 
 /* =========================================================
    NAVIGATION
    ========================================================= */
+
 .navbar {
     width: 100%;
     max-width: 100%;
 
-    padding: 22px 6%;
+    min-height: 90px;
+
+    padding: 18px 6%;
 
     display: flex;
     justify-content: space-between;
@@ -63,11 +64,14 @@ body {
 
     overflow: hidden;
 }
+
 .logo {
     display: flex;
     align-items: center;
 
     flex-shrink: 0;
+
+    text-decoration: none;
 }
 
 .logo img {
@@ -77,12 +81,6 @@ body {
     height: auto;
 
     display: block;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 28px;
 }
 
 .nav-links {
@@ -97,7 +95,26 @@ body {
     padding: 0;
 
     flex-wrap: wrap;
+
+    min-width: 0;
 }
+
+.nav-links li {
+    flex-shrink: 0;
+}
+
+.nav-links a {
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
 .nav-links a:hover {
     color: #777;
 }
@@ -107,9 +124,7 @@ body {
    HERO
    ========================================================= */
 
-..hero {
-    position: relative;
-
+.hero {
     width: 100%;
     max-width: 100%;
 
@@ -120,10 +135,10 @@ body {
 
     padding: 100px 8%;
 
-    background-image:
+    background:
         linear-gradient(
-            rgba(15, 15, 15, 0.60),
-            rgba(15, 15, 15, 0.60)
+            rgba(15, 15, 15, 0.62),
+            rgba(15, 15, 15, 0.62)
         ),
         url("../images/lab.jpg");
 
@@ -131,30 +146,44 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
 
-    overflow: hidden;
-
     color: white;
+
+    overflow: hidden;
 }
 
 .hero-content {
+    width: 100%;
     max-width: 850px;
+
+    min-width: 0;
+
     color: white;
 }
 
 .university {
     font-size: 13px;
+
     letter-spacing: 3px;
+
     margin-bottom: 25px;
+
+    color: #ffffff;
 }
 
 .hero h1 {
+    max-width: 900px;
+
     font-size: clamp(45px, 6vw, 78px);
+
     line-height: 1.05;
+
     font-weight: 700;
+
     margin-bottom: 30px;
 }
 
 .hero-description {
+    width: 100%;
     max-width: 680px;
 
     font-size: 20px;
@@ -166,24 +195,29 @@ body {
 
 .hero-buttons {
     display: flex;
+
     gap: 15px;
+
     flex-wrap: wrap;
 }
 
 .button,
 .button-outline {
+    display: inline-block;
+
     padding: 13px 25px;
 
     text-decoration: none;
 
     font-size: 14px;
 
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .button {
-    background: white;
-    color: #111;
+    background: #ffffff;
+
+    color: #111111;
 }
 
 .button:hover {
@@ -191,13 +225,15 @@ body {
 }
 
 .button-outline {
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #ffffff;
+
+    color: #ffffff;
 }
 
 .button-outline:hover {
-    background: white;
-    color: #111;
+    background: #ffffff;
+
+    color: #111111;
 }
 
 
@@ -206,17 +242,23 @@ body {
    ========================================================= */
 
 .section {
+    width: 100%;
     max-width: 1200px;
 
-    margin: auto;
+    margin: 0 auto;
 
     padding: 110px 7%;
+
+    min-width: 0;
 }
 
 .section-heading {
+    width: 100%;
     max-width: 850px;
 
     margin-bottom: 60px;
+
+    min-width: 0;
 }
 
 .section-label {
@@ -228,7 +270,7 @@ body {
 
     margin-bottom: 18px;
 
-    color: #666;
+    color: #666666;
 }
 
 .section h2 {
@@ -237,6 +279,8 @@ body {
     line-height: 1.15;
 
     margin-bottom: 25px;
+
+    overflow-wrap: break-word;
 }
 
 
@@ -247,18 +291,27 @@ body {
 .about {
     display: grid;
 
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
 
     gap: 80px;
 }
 
+.about > * {
+    min-width: 0;
+}
+
 .about-content {
     font-size: 17px;
-    color: #444;
+
+    color: #444444;
+
+    min-width: 0;
 }
 
 .about-content p {
     margin-bottom: 22px;
+
+    overflow-wrap: break-word;
 }
 
 
@@ -267,27 +320,38 @@ body {
    ========================================================= */
 
 .research-section {
-    background: #f7f7f7;
+    width: 100%;
     max-width: none;
+
+    background: #f7f7f7;
 }
 
 .research-section > * {
+    width: 100%;
     max-width: 1200px;
+
     margin-left: auto;
     margin-right: auto;
+
+    min-width: 0;
 }
 
 .research-grid {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3, minmax(0, 1fr));
 
     gap: 20px;
+
+    width: 100%;
 }
 
 .research-card {
-    background: white;
+    width: 100%;
+    min-width: 0;
+
+    background: #ffffff;
 
     padding: 35px;
 
@@ -295,7 +359,9 @@ body {
 
     border: 1px solid #e5e5e5;
 
-    transition: 0.3s;
+    transition: all 0.3s ease;
+
+    overflow-wrap: break-word;
 }
 
 .research-card:hover {
@@ -310,7 +376,7 @@ body {
 
     font-size: 13px;
 
-    color: #888;
+    color: #888888;
 
     margin-bottom: 30px;
 }
@@ -322,7 +388,7 @@ body {
 }
 
 .research-card p {
-    color: #666;
+    color: #666666;
 }
 
 
@@ -331,25 +397,35 @@ body {
    ========================================================= */
 
 .sensing-section {
-    background: #151515;
-
-    color: white;
+    width: 100%;
+    max-width: 100%;
 
     padding: 110px 7%;
 
     display: grid;
 
-    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
 
     gap: 80px;
+
+    background: #151515;
+
+    color: #ffffff;
+
+    min-width: 0;
 }
 
 .sensing-content {
+    width: 100%;
     max-width: 600px;
+
+    min-width: 0;
 }
 
 .sensing-content .section-label {
-    color: #aaa;
+    color: #aaaaaa;
 }
 
 .sensing-content h2 {
@@ -358,6 +434,8 @@ body {
     line-height: 1.15;
 
     margin-bottom: 25px;
+
+    overflow-wrap: break-word;
 }
 
 .sensing-content p {
@@ -365,26 +443,33 @@ body {
 }
 
 .sensing-grid {
+    width: 100%;
+    min-width: 0;
+
     display: grid;
 
     grid-template-columns:
-        repeat(2, 1fr);
+        repeat(2, minmax(0, 1fr));
 
     gap: 30px;
 }
 
 .sensing-grid div {
-    border-top: 1px solid #555;
+    min-width: 0;
+
+    border-top: 1px solid #555555;
 
     padding-top: 20px;
 }
 
 .sensing-grid h3 {
     margin-bottom: 8px;
+
+    overflow-wrap: break-word;
 }
 
 .sensing-grid p {
-    color: #aaa;
+    color: #aaaaaa;
 
     font-size: 14px;
 }
@@ -395,16 +480,20 @@ body {
    ========================================================= */
 
 .goals-grid {
+    width: 100%;
+
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3, minmax(0, 1fr));
 
     gap: 25px;
 }
 
 .goal {
-    border-top: 2px solid #222;
+    min-width: 0;
+
+    border-top: 2px solid #222222;
 
     padding-top: 25px;
 }
@@ -412,50 +501,67 @@ body {
 .goal span {
     font-size: 13px;
 
-    color: #777;
+    color: #777777;
 }
 
 .goal h3 {
     font-size: 22px;
 
     margin: 20px 0 15px;
+
+    overflow-wrap: break-word;
 }
 
 .goal p {
-    color: #666;
+    color: #666666;
 }
 
 
 /* =========================================================
-   PROFESSOR
+   PROFESSOR / LAB DIRECTOR
    ========================================================= */
 
 .pi-section {
+    width: 100%;
+    max-width: 100%;
+
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
 
     min-height: 600px;
+
+    min-width: 0;
 }
 
 .pi-image {
+    width: 100%;
+    min-width: 0;
+
+    min-height: 600px;
+
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.05),
-            rgba(0, 0, 0, 0.05)
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.02)
         ),
         url("../images/professor.jpg");
 
     background-size: contain;
+
     background-repeat: no-repeat;
+
     background-position: center center;
 
     background-color: #eeeeee;
-
-    min-height: 550px;
 }
 
 .pi-content {
+    width: 100%;
+    min-width: 0;
+
     padding: 90px 10%;
 
     background: #f2f2f2;
@@ -471,12 +577,14 @@ body {
     font-size: 48px;
 
     margin-bottom: 5px;
+
+    overflow-wrap: break-word;
 }
 
 .designation {
     font-size: 18px;
 
-    color: #666;
+    color: #666666;
 
     margin-bottom: 25px;
 }
@@ -486,7 +594,7 @@ body {
 
     margin-top: 20px;
 
-    color: #111;
+    color: #111111;
 
     text-decoration: none;
 
@@ -499,15 +607,26 @@ body {
    ========================================================= */
 
 .contact-section {
+    width: 100%;
+    max-width: 100%;
+
     padding: 100px 7%;
 
     display: grid;
 
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(0, 0.8fr);
 
     gap: 80px;
 
     background: #eeeeee;
+
+    min-width: 0;
+}
+
+.contact-section > * {
+    min-width: 0;
 }
 
 .contact-section h2 {
@@ -516,12 +635,15 @@ body {
     line-height: 1.15;
 
     margin-bottom: 20px;
+
+    overflow-wrap: break-word;
 }
 
 .contact-section p {
+    width: 100%;
     max-width: 650px;
 
-    color: #555;
+    color: #555555;
 }
 
 .contact-details {
@@ -530,16 +652,20 @@ body {
     flex-direction: column;
 
     gap: 30px;
+
+    min-width: 0;
 }
 
 .contact-details strong {
-    color: #111;
+    color: #111111;
 }
 
 .contact-details a {
-    color: #444;
+    color: #444444;
 
     text-decoration: none;
+
+    overflow-wrap: break-word;
 }
 
 
@@ -548,14 +674,21 @@ body {
    ========================================================= */
 
 footer {
-    background: #111;
+    width: 100%;
+    max-width: 100%;
 
-    color: white;
+    background: #111111;
+
+    color: #ffffff;
 
     padding: 60px 7% 25px;
+
+    overflow: hidden;
 }
 
 .footer-content {
+    width: 100%;
+
     display: flex;
 
     justify-content: space-between;
@@ -563,6 +696,12 @@ footer {
     gap: 50px;
 
     padding-bottom: 50px;
+
+    min-width: 0;
+}
+
+.footer-content > div {
+    min-width: 0;
 }
 
 .footer-content h3 {
@@ -570,7 +709,7 @@ footer {
 }
 
 .footer-content p {
-    color: #999;
+    color: #999999;
 }
 
 .footer-content div:last-child {
@@ -582,23 +721,92 @@ footer {
 }
 
 .footer-content a {
-    color: #ccc;
+    color: #cccccc;
 
     text-decoration: none;
+
+    overflow-wrap: break-word;
 }
 
 .footer-content a:hover {
-    color: white;
+    color: #ffffff;
 }
 
 .footer-bottom {
-    border-top: 1px solid #333;
+    border-top: 1px solid #333333;
 
     padding-top: 25px;
 
-    color: #777;
+    color: #777777;
 
     font-size: 13px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 620px;
+
+        padding: 90px 7%;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 7vw, 65px);
+    }
+
+    .about {
+        grid-template-columns:
+            minmax(0, 1fr);
+
+        gap: 40px;
+    }
+
+    .research-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .sensing-section {
+        grid-template-columns:
+            minmax(0, 1fr);
+
+        gap: 50px;
+    }
+
+    .goals-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .pi-section {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+    }
+
+    .pi-image {
+        min-height: 550px;
+    }
+
+    .contact-section {
+        grid-template-columns:
+            minmax(0, 1fr);
+
+        gap: 50px;
+    }
 }
 
 
@@ -606,45 +814,30 @@ footer {
    MOBILE
    ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
     .navbar {
-        flex-direction: column;
-        gap: 20px;
-    }
+        width: 100%;
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+        min-height: auto;
 
-    .about,
-    .sensing-section,
-    .contact-section,
-    .pi-section {
-        grid-template-columns: 1fr;
-    }
-
-    .research-grid,
-    .goals-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .pi-image {
-        min-height: 450px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .navbar {
         padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .logo img {
+        width: 130px;
     }
 
     .nav-links {
-        gap: 14px;
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 12px 18px;
     }
 
     .nav-links a {
@@ -652,13 +845,25 @@ footer {
     }
 
     .hero {
+        width: 100%;
+
         min-height: 600px;
 
         padding: 80px 7%;
+
+        background-position: center center;
+    }
+
+    .university {
+        font-size: 11px;
+
+        letter-spacing: 2px;
     }
 
     .hero h1 {
         font-size: 43px;
+
+        line-height: 1.05;
     }
 
     .hero-description {
@@ -666,26 +871,107 @@ footer {
     }
 
     .section {
+        width: 100%;
+
         padding: 75px 7%;
     }
 
     .research-grid,
-    .goals-grid,
-    .sensing-grid {
-        grid-template-columns: 1fr;
+    .goals-grid {
+        grid-template-columns:
+            minmax(0, 1fr);
     }
 
     .sensing-section {
+        width: 100%;
+
         padding: 75px 7%;
     }
 
+    .sensing-grid {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+    .pi-section {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+    .pi-image {
+        width: 100%;
+
+        min-height: 500px;
+
+        background-size: contain;
+    }
+
+    .pi-content {
+        padding: 70px 8%;
+    }
+
+    .pi-content h2 {
+        font-size: 40px;
+    }
+
     .contact-section {
+        width: 100%;
+
         padding: 75px 7%;
     }
 
     .footer-content {
         flex-direction: column;
+
+        gap: 35px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .logo img {
+        width: 115px;
     }
 
+    .nav-links {
+        gap: 10px 14px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 560px;
+
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .button,
+    .button-outline {
+        padding: 11px 18px;
+
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 65px 6%;
+    }
+
+    .pi-image {
+        min-height: 430px;
+    }
 }
-```
