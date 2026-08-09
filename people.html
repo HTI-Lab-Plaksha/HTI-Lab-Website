@@ -10,15 +10,24 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>People | HTI Lab</title>
+    <title>People | HTI Lab | Plaksha University</title>
+
+    <meta
+        name="description"
+        content="People and researchers at the Human-Technology Interaction Lab, Plaksha University."
+    >
 
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
 
-    <!-- NAVIGATION -->
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
 
     <header class="navbar">
 
@@ -26,10 +35,11 @@
 
             <img
                 src="images/hti-logo.png"
-                alt="HTI Lab Logo"
+                alt="Human-Technology Interaction Lab Logo"
             >
 
         </a>
+
 
         <nav>
 
@@ -44,7 +54,7 @@
                 </li>
 
                 <li>
-                    <a href="people.html">People</a>
+                    <a href="people.html" class="active">People</a>
                 </li>
 
                 <li>
@@ -70,23 +80,27 @@
     </header>
 
 
-    <!-- PAGE HEADER -->
 
-    <section class="page-header">
+    <!-- =====================================================
+         PAGE HEADER
+         ===================================================== -->
 
-        <div>
+    <section class="people-hero">
+
+        <div class="people-hero-content">
 
             <div class="section-label">
-                OUR TEAM
+                PEOPLE
             </div>
 
             <h1>
-                People
+                Meet Our Team
             </h1>
 
             <p>
-                Meet the researchers and members of the
-                Human-Technology Interaction Lab.
+                The Human-Technology Interaction Lab brings together
+                researchers and students from diverse backgrounds
+                working at the intersection of humans and technology.
             </p>
 
         </div>
@@ -94,13 +108,59 @@
     </section>
 
 
-    <!-- LAB DIRECTOR -->
 
-    <section class="people-page">
+    <!-- =====================================================
+         PEOPLE NAVIGATION
+         ===================================================== -->
 
-        <div class="person-card">
+    <section class="people-navigation">
 
-            <div class="person-image">
+        <a href="#professor">
+            Professor
+        </a>
+
+        <a href="#phd">
+            PhD Students
+        </a>
+
+        <a href="#research-fellows">
+            Research Fellows
+        </a>
+
+        <a href="#undergraduate">
+            Undergraduate Students
+        </a>
+
+        <a href="#alumni">
+            Alumni
+        </a>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROFESSOR
+         ===================================================== -->
+
+    <section class="people-section" id="professor">
+
+        <div class="people-section-header">
+
+            <div class="section-label">
+                LAB DIRECTOR
+            </div>
+
+            <h2>
+                Professor
+            </h2>
+
+        </div>
+
+
+        <div class="professor-card">
+
+            <div class="professor-photo">
 
                 <img
                     src="images/professor.jpg"
@@ -110,62 +170,535 @@
             </div>
 
 
-            <div class="person-info">
+            <div class="professor-details">
 
-                <div class="section-label">
+                <div class="person-role">
                     LAB DIRECTOR
                 </div>
 
-                <h2>
-                    Prof. Siddharth
-                </h2>
-
                 <h3>
-                    Associate Professor
+                    Prof. Siddharth
                 </h3>
+
+                <p class="person-position">
+                    Associate Professor
+                </p>
 
                 <p>
                     School of Computer Science and Artificial
                     Intelligence (CSAI), Plaksha University.
                 </p>
 
+                <p>
+                    Human-Technology Interaction, Human Factors,
+                    Artificial Intelligence, and interdisciplinary
+                    research involving human cognition and technology.
+                </p>
+
                 <a
                     href="https://ssiddharth.in/about-me.html"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-link"
+                    class="person-link"
                 >
-                    Visit Faculty Profile →
+                    Faculty Profile →
                 </a>
 
             </div>
 
         </div>
 
+    </section>
 
-        <!-- FUTURE MEMBERS -->
 
-        <div class="team-section">
+
+    <!-- =====================================================
+         PHD STUDENTS
+         ===================================================== -->
+
+    <section class="people-section" id="phd">
+
+        <div class="people-section-header">
 
             <div class="section-label">
-                RESEARCH TEAM
+                PHD STUDENTS
             </div>
 
             <h2>
-                Researchers & Students
+                PhD Students
             </h2>
 
             <p>
-                Information about researchers, research fellows,
-                PhD students, and other lab members will be added here.
+                Doctoral researchers working on human-centered
+                technology and interdisciplinary research.
             </p>
+
+        </div>
+
+
+        <div class="people-grid">
+
+
+            <!-- PERSON 1 -->
+
+            <article class="person-card">
+
+                <div class="person-card-image">
+
+                    <img
+                        src="images/phd-student-1.jpg"
+                        alt="PhD Student"
+                    >
+
+                </div>
+
+                <div class="person-card-content">
+
+                    <div class="person-role">
+                        PHD STUDENT
+                    </div>
+
+                    <h3>
+                        Add Name
+                    </h3>
+
+                    <p class="person-position">
+                        PhD Student
+                    </p>
+
+                    <p>
+                        Research interests: Add research interests here.
+                    </p>
+
+                    <a href="#" class="person-link">
+                        Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PERSON 2 -->
+
+            <article class="person-card">
+
+                <div class="person-card-image">
+
+                    <img
+                        src="images/phd-student-2.jpg"
+                        alt="PhD Student"
+                    >
+
+                </div>
+
+                <div class="person-card-content">
+
+                    <div class="person-role">
+                        PHD STUDENT
+                    </div>
+
+                    <h3>
+                        Add Name
+                    </h3>
+
+                    <p class="person-position">
+                        PhD Student
+                    </p>
+
+                    <p>
+                        Research interests: Add research interests here.
+                    </p>
+
+                    <a href="#" class="person-link">
+                        Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PERSON 3 -->
+
+            <article class="person-card">
+
+                <div class="person-card-image">
+
+                    <img
+                        src="images/phd-student-3.jpg"
+                        alt="PhD Student"
+                    >
+
+                </div>
+
+                <div class="person-card-content">
+
+                    <div class="person-role">
+                        PHD STUDENT
+                    </div>
+
+                    <h3>
+                        Add Name
+                    </h3>
+
+                    <p class="person-position">
+                        PhD Student
+                    </p>
+
+                    <p>
+                        Research interests: Add research interests here.
+                    </p>
+
+                    <a href="#" class="person-link">
+                        Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
 
         </div>
 
     </section>
 
 
-    <!-- FOOTER -->
+
+    <!-- =====================================================
+         RESEARCH FELLOWS
+         ===================================================== -->
+
+    <section class="people-section people-section-gray" id="research-fellows">
+
+        <div class="people-section-header">
+
+            <div class="section-label">
+                RESEARCH FELLOWS
+            </div>
+
+            <h2>
+                Research Fellows
+            </h2>
+
+            <p>
+                Research fellows contributing to ongoing projects
+                and experimental studies at the HTI Lab.
+            </p>
+
+        </div>
+
+
+        <div class="people-grid">
+
+
+            <article class="person-card">
+
+                <div class="person-card-image">
+
+                    <img
+                        src="images/research-fellow-1.jpg"
+                        alt="Research Fellow"
+                    >
+
+                </div>
+
+                <div class="person-card-content">
+
+                    <div class="person-role">
+                        RESEARCH FELLOW
+                    </div>
+
+                    <h3>
+                        Add Name
+                    </h3>
+
+                    <p class="person-position">
+                        Research Fellow
+                    </p>
+
+                    <p>
+                        Research interests: Add research interests here.
+                    </p>
+
+                    <a href="#" class="person-link">
+                        Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="person-card">
+
+                <div class="person-card-image">
+
+                    <img
+                        src="images/research-fellow-2.jpg"
+                        alt="Research Fellow"
+                    >
+
+                </div>
+
+                <div class="person-card-content">
+
+                    <div class="person-role">
+                        RESEARCH FELLOW
+                    </div>
+
+                    <h3>
+                        Add Name
+                    </h3>
+
+                    <p class="person-position">
+                        Research Fellow
+                    </p>
+
+                    <p>
+                        Research interests: Add research interests here.
+                    </p>
+
+                    <a href="#" class="person-link">
+                        Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         UNDERGRADUATE STUDENTS
+         ===================================================== -->
+
+    <section class="people-section" id="undergraduate">
+
+        <div class="people-section-header">
+
+            <div class="section-label">
+                UNDERGRADUATE STUDENTS
+            </div>
+
+            <h2>
+                Undergraduate Students
+            </h2>
+
+            <p>
+                Undergraduate researchers working on projects,
+                experiments, and interdisciplinary research.
+            </p>
+
+        </div>
+
+
+        <div class="people-grid">
+
+
+            <article class="person-card">
+
+                <div class="person-card-image">
+
+                    <img
+                        src="images/undergraduate-1.jpg"
+                        alt="Undergraduate Student"
+                    >
+
+                </div>
+
+                <div class="person-card-content">
+
+                    <div class="person-role">
+                        UNDERGRADUATE RESEARCHER
+                    </div>
+
+                    <h3>
+                        Add Name
+                    </h3>
+
+                    <p class="person-position">
+                        Undergraduate Student
+                    </p>
+
+                    <p>
+                        Research interests: Add research interests here.
+                    </p>
+
+                    <a href="#" class="person-link">
+                        Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="person-card">
+
+                <div class="person-card-image">
+
+                    <img
+                        src="images/undergraduate-2.jpg"
+                        alt="Undergraduate Student"
+                    >
+
+                </div>
+
+                <div class="person-card-content">
+
+                    <div class="person-role">
+                        UNDERGRADUATE RESEARCHER
+                    </div>
+
+                    <h3>
+                        Add Name
+                    </h3>
+
+                    <p class="person-position">
+                        Undergraduate Student
+                    </p>
+
+                    <p>
+                        Research interests: Add research interests here.
+                    </p>
+
+                    <a href="#" class="person-link">
+                        Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="person-card">
+
+                <div class="person-card-image">
+
+                    <img
+                        src="images/undergraduate-3.jpg"
+                        alt="Undergraduate Student"
+                    >
+
+                </div>
+
+                <div class="person-card-content">
+
+                    <div class="person-role">
+                        UNDERGRADUATE RESEARCHER
+                    </div>
+
+                    <h3>
+                        Add Name
+                    </h3>
+
+                    <p class="person-position">
+                        Undergraduate Student
+                    </p>
+
+                    <p>
+                        Research interests: Add research interests here.
+                    </p>
+
+                    <a href="#" class="person-link">
+                        Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ALUMNI
+         ===================================================== -->
+
+    <section class="people-section people-section-gray" id="alumni">
+
+        <div class="people-section-header">
+
+            <div class="section-label">
+                ALUMNI
+            </div>
+
+            <h2>
+                Alumni
+            </h2>
+
+            <p>
+                Former members of the HTI Lab and their contributions
+                to research and technology.
+            </p>
+
+        </div>
+
+
+        <div class="alumni-list">
+
+
+            <div class="alumni-item">
+
+                <div>
+
+                    <h3>
+                        Add Alumni Name
+                    </h3>
+
+                    <p>
+                        Former Research Fellow / Student
+                    </p>
+
+                </div>
+
+                <span>
+                    2024–2026
+                </span>
+
+            </div>
+
+
+            <div class="alumni-item">
+
+                <div>
+
+                    <h3>
+                        Add Alumni Name
+                    </h3>
+
+                    <p>
+                        Former Undergraduate Researcher
+                    </p>
+
+                </div>
+
+                <span>
+                    2023–2025
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
 
     <footer>
 
@@ -185,7 +718,7 @@
             </div>
 
 
-            <div>
+            <div class="footer-links">
 
                 <a href="index.html">Home</a>
 
@@ -195,9 +728,7 @@
 
                 <a href="projects.html">Projects</a>
 
-                <a href="publications.html">
-                    Publications
-                </a>
+                <a href="publications.html">Publications</a>
 
                 <a href="news.html">News</a>
 
@@ -211,11 +742,12 @@
         <div class="footer-bottom">
 
             © 2026 Human-Technology Interaction Lab,
-            Plaksha University.
+            Plaksha University. All rights reserved.
 
         </div>
 
     </footer>
+
 
 </body>
 
