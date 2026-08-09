@@ -1,0 +1,755 @@
+/* =========================================================
+   HTI LAB - PEOPLE PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 85px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #fff;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #777;
+}
+
+.nav-links a.active {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.people-hero {
+    min-height: 500px;
+
+    background: #f3f3f0;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 130px 8% 100px;
+}
+
+.people-hero-content {
+    max-width: 850px;
+}
+
+.section-label {
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    color: #777;
+}
+
+.people-hero h1 {
+    font-size: clamp(65px, 8vw, 110px);
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+
+    font-weight: 600;
+
+    margin: 25px 0 30px;
+}
+
+.people-hero p {
+    max-width: 700px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #555;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   CATEGORY NAVIGATION
+========================================================= */
+
+.people-nav {
+    width: 100%;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    background: #fff;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.people-nav a {
+    display: block;
+
+    padding: 25px 25px 25px 0;
+
+    margin-right: 30px;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.people-nav a:hover {
+    color: #777;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+.people-section {
+    width: 100%;
+
+    padding: 110px 8%;
+}
+
+.people-light {
+    background: #f3f3f0;
+}
+
+.section-intro {
+    max-width: 850px;
+
+    margin-bottom: 65px;
+}
+
+.section-intro span {
+    display: block;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    color: #777;
+
+    margin-bottom: 20px;
+}
+
+.section-intro h2 {
+    font-size: clamp(50px, 5vw, 75px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 600;
+
+    margin: 0 0 25px;
+}
+
+.section-intro p {
+    max-width: 700px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   PROFESSOR
+========================================================= */
+
+.professor-profile {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    background: #f3f3f0;
+}
+
+.professor-photo {
+    width: 100%;
+
+    height: 650px;
+
+    overflow: hidden;
+}
+
+.professor-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+}
+
+.professor-info {
+    padding: 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.person-label {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    color: #777;
+
+    margin-bottom: 20px;
+}
+
+.professor-info h3 {
+    font-size: 55px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin: 0 0 15px;
+
+    font-weight: 600;
+}
+
+.professor-info .position {
+    font-size: 21px;
+
+    color: #666;
+
+    margin: 0 0 30px;
+}
+
+.professor-info p {
+    max-width: 600px;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    color: #444;
+
+    margin: 0 0 20px;
+}
+
+.professor-info a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+.professor-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   THREE COLUMN GRID
+========================================================= */
+
+.people-grid {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   PERSON CARD
+========================================================= */
+
+.member-card {
+    background: #fff;
+
+    overflow: hidden;
+
+    border: 1px solid #e2e2e2;
+
+    transition: 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   PERSON PHOTO
+========================================================= */
+
+.member-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    background: #e5e5e2;
+}
+
+.member-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+}
+
+
+/* =========================================================
+   PERSON DETAILS
+========================================================= */
+
+.member-info {
+    padding: 30px;
+}
+
+.member-info > span {
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+
+    font-weight: 700;
+
+    color: #777;
+
+    margin-bottom: 15px;
+}
+
+.member-info h3 {
+    font-size: 28px;
+
+    line-height: 1.15;
+
+    margin: 0 0 10px;
+
+    font-weight: 600;
+}
+
+.member-position {
+    color: #555;
+
+    font-size: 15px;
+
+    margin: 0 0 15px;
+}
+
+.member-info p:not(.member-position) {
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    color: #666;
+
+    margin: 0 0 18px;
+}
+
+.member-info a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.member-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   ALUMNI
+========================================================= */
+
+.alumni-section {
+    background: #fff;
+}
+
+.alumni-list {
+    width: 100%;
+
+    max-width: 1100px;
+}
+
+.alumni-row {
+    width: 100%;
+
+    padding: 30px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.alumni-row:first-child {
+    border-top: 1px solid #d5d5d5;
+}
+
+.alumni-row h3 {
+    margin: 0 0 8px;
+
+    font-size: 24px;
+
+    font-weight: 600;
+}
+
+.alumni-row p {
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #666;
+}
+
+.alumni-row > span {
+    font-size: 14px;
+
+    color: #777;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: #111;
+
+    color: #fff;
+
+    padding: 70px 8% 30px;
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    margin: 0 0 15px;
+
+    font-size: 18px;
+}
+
+.footer-content p {
+    line-height: 1.7;
+
+    color: #aaa;
+}
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    align-items: flex-start;
+}
+
+.footer-links a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #aaa;
+}
+
+.footer-bottom {
+    max-width: 1250px;
+
+    margin: 50px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #333;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .people-hero {
+        padding: 120px 6% 80px;
+    }
+
+    .people-section {
+        padding: 90px 6%;
+    }
+
+    .people-nav {
+        padding: 0 6%;
+    }
+
+    .professor-profile {
+        grid-template-columns: 1fr;
+    }
+
+    .professor-photo {
+        height: 550px;
+    }
+
+    .people-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        min-height: 70px;
+
+        padding: 0 5%;
+    }
+
+    .logo img {
+        width: 52px;
+
+        height: 52px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .people-hero {
+        min-height: 420px;
+
+        padding: 110px 6% 70px;
+    }
+
+    .people-hero h1 {
+        font-size: 55px;
+
+        letter-spacing: -3px;
+    }
+
+    .people-hero p {
+        font-size: 17px;
+    }
+
+    .people-nav {
+        padding: 10px 6%;
+    }
+
+    .people-nav a {
+        padding: 10px 15px 10px 0;
+
+        margin-right: 10px;
+    }
+
+    .people-section {
+        padding: 75px 6%;
+    }
+
+    .section-intro h2 {
+        font-size: 45px;
+
+        letter-spacing: -2px;
+    }
+
+    .professor-photo {
+        height: 450px;
+    }
+
+    .professor-info {
+        padding: 45px 30px;
+    }
+
+    .professor-info h3 {
+        font-size: 40px;
+    }
+
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .member-info {
+        padding: 25px;
+    }
+
+    .alumni-row {
+        display: block;
+    }
+
+    .alumni-row > span {
+        display: block;
+
+        margin-top: 12px;
+    }
+
+    .footer-content {
+        display: block;
+    }
+
+    .footer-links {
+        margin-top: 40px;
+    }
+
+}
