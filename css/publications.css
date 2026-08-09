@@ -1,0 +1,517 @@
+/* =====================================================
+   HTI LAB
+   PUBLICATIONS PAGE
+===================================================== */
+
+
+/* -----------------------------------------------------
+   BASIC
+----------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #151515;
+
+    background: #ffffff;
+
+    line-height: 1.6;
+}
+
+
+
+/* -----------------------------------------------------
+   NAVIGATION
+----------------------------------------------------- */
+
+.publication-navbar {
+
+    height: 82px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom:
+        1px solid #e5e5e5;
+
+    background: #ffffff;
+}
+
+
+.publication-logo img {
+
+    width: 58px;
+
+    height: 58px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+.publication-nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.publication-nav-links a {
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.publication-nav-links a:hover {
+
+    color: #777;
+}
+
+
+.publication-nav-links a.active {
+
+    font-weight: 700;
+
+    color: #000;
+}
+
+
+
+/* -----------------------------------------------------
+   MAIN PAGE
+----------------------------------------------------- */
+
+.publications-page {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+        85px 60px
+        110px;
+}
+
+
+
+/* -----------------------------------------------------
+   TITLE
+----------------------------------------------------- */
+
+.page-title {
+
+    margin-bottom: 75px;
+}
+
+
+.page-title h1 {
+
+    margin: 0 0 15px;
+
+    font-size: 54px;
+
+    font-weight: 600;
+
+    letter-spacing: -2px;
+}
+
+
+.page-title p {
+
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+
+/* -----------------------------------------------------
+   YEAR
+----------------------------------------------------- */
+
+.publication-year {
+
+    margin-bottom: 70px;
+}
+
+
+.publication-year h2 {
+
+    margin: 0;
+
+    padding:
+        0 0 15px;
+
+    border-bottom:
+        2px solid #222;
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+}
+
+
+
+/* -----------------------------------------------------
+   PUBLICATION ITEM
+----------------------------------------------------- */
+
+.publication-item {
+
+    display: grid;
+
+    grid-template-columns:
+        55px 1fr;
+
+    gap: 15px;
+
+    padding:
+        25px 0;
+
+    border-bottom:
+        1px solid #e2e2e2;
+}
+
+
+.publication-id {
+
+    color: #666;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    padding-top: 2px;
+}
+
+
+.publication-content {
+
+    max-width: 900px;
+}
+
+
+.publication-content p {
+
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    color: #252525;
+}
+
+
+.publication-content strong {
+
+    font-weight: 600;
+}
+
+
+
+/* -----------------------------------------------------
+   PUBLICATION LINK
+----------------------------------------------------- */
+
+.publication-content a {
+
+    display: inline-block;
+
+    margin-top: 9px;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-bottom:
+        1px solid #aaa;
+}
+
+
+.publication-content a:hover {
+
+    color: #000;
+
+    border-color: #000;
+}
+
+
+
+/* -----------------------------------------------------
+   FOOTER
+----------------------------------------------------- */
+
+.publication-footer {
+
+    background: #151515;
+
+    color: #ffffff;
+
+    padding:
+        55px 7%
+        25px;
+}
+
+
+.publication-footer-inner {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+.publication-footer h3 {
+
+    margin:
+        0 0 12px;
+
+    font-size: 17px;
+}
+
+
+.publication-footer p {
+
+    margin: 0;
+
+    color: #aaaaaa;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    gap: 22px;
+}
+
+
+.footer-links a {
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+
+.footer-links a:hover {
+
+    color: #aaaaaa;
+}
+
+
+.footer-bottom {
+
+    max-width: 1100px;
+
+    margin:
+        45px auto 0;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid #333;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+
+/* -----------------------------------------------------
+   TABLET
+----------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .publication-navbar {
+
+        padding:
+            0 5%;
+    }
+
+
+    .publication-nav-links {
+
+        gap: 18px;
+    }
+
+
+    .publications-page {
+
+        padding:
+            70px 40px
+            90px;
+    }
+
+}
+
+
+
+/* -----------------------------------------------------
+   MOBILE
+----------------------------------------------------- */
+
+@media (max-width: 650px) {
+
+    .publication-navbar {
+
+        height: 70px;
+
+        padding:
+            0 5%;
+    }
+
+
+    .publication-logo img {
+
+        width: 50px;
+
+        height: 50px;
+    }
+
+
+    .publication-nav-links {
+
+        gap: 11px;
+    }
+
+
+    .publication-nav-links a {
+
+        font-size: 11px;
+    }
+
+
+    .publications-page {
+
+        padding:
+            55px 22px
+            75px;
+    }
+
+
+    .page-title {
+
+        margin-bottom: 55px;
+    }
+
+
+    .page-title h1 {
+
+        font-size: 43px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .page-title p {
+
+        font-size: 15px;
+    }
+
+
+    .publication-year h2 {
+
+        font-size: 26px;
+    }
+
+
+    .publication-item {
+
+        grid-template-columns:
+            45px 1fr;
+
+        gap: 8px;
+
+        padding:
+            22px 0;
+    }
+
+
+    .publication-content p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .publication-footer-inner {
+
+        display: block;
+    }
+
+
+    .footer-links {
+
+        margin-top: 30px;
+    }
+
+}
