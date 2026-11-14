@@ -68,19 +68,13 @@ body {
 .logo {
     display: flex;
     align-items: center;
-
     flex-shrink: 0;
-
     text-decoration: none;
-}
-
-.logo img {
-    width: 145px;
-    max-width: 145px;
-
-    height: auto;
-
-    display: block;
+    color: #181818;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -127,28 +121,40 @@ body {
 .hero {
     width: 100%;
     max-width: 100%;
-
     min-height: 680px;
-
     display: flex;
     align-items: center;
-
     padding: 100px 8%;
+    position: relative;
+    isolation: isolate;
+    background: #151515;
+    color: white;
+    overflow: hidden;
+}
 
-    background:
-        linear-gradient(
-            rgba(15, 15, 15, 0.62),
-            rgba(15, 15, 15, 0.62)
-        ),
-        url("../images/lab.jpg");
-
+/* Homepage slideshow layers are populated from gallery.html by js/slideshow.js */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
 
-    color: white;
+.hero-slide.is-active {
+    opacity: 1;
+}
 
-    overflow: hidden;
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(15, 15, 15, 0.62);
+    pointer-events: none;
 }
 
 .hero-content {
@@ -828,10 +834,6 @@ footer {
         gap: 18px;
     }
 
-    .logo img {
-        width: 130px;
-    }
-
     .nav-links {
         width: 100%;
 
@@ -928,15 +930,18 @@ footer {
 }
 
 
+
+@media (max-width: 700px) {
+    .logo {
+        font-size: 18px;
+    }
+}
+
 /* =========================================================
    SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 450px) {
-
-    .logo img {
-        width: 115px;
-    }
 
     .nav-links {
         gap: 10px 14px;
