@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEG Signature of Meditation | HTI Lab</title>
+    <link rel="stylesheet" href="css/research.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="research-navbar">
+    <a href="index.html" class="research-logo">
+        <img src="images/hti-logo.png" alt="HTI Lab Logo">
+    </a>
+
+    <nav>
+        <ul class="research-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="research-hero">
+    <div class="research-hero-content">
+        <div class="research-label">
+            RESEARCH PROJECT
+        </div>
+        <h1>
+            A Shared but Individually Scaled EEG Signature of Meditation
+        </h1>
+        <p>
+            Why EEG-based meditation monitors struggle with new people, and what it takes to fix it[cite: 5].
+        </p>
+    </div>
+</section>
+
+
+<!-- MAIN PROJECT SECTION -->
+<section class="projects-section">
+
+    <!-- ABSTRACT / PROBLEM STATEMENT -->
+    <div class="research-section-heading">
+        <div class="research-label">
+            THE PROBLEM
+        </div>
+        <h2>
+            Background & Problem Statement
+        </h2>
+        <p>
+            Electroencephalography (EEG) records the brain's tiny electrical signals through sensors on the scalp, forming rhythms at different speeds (delta, theta, alpha, beta, gamma) that shift with mental states[cite: 5]. 
+            Meditation is a private mental state; researchers rely on instructions or self-report to know when it happens[cite: 5]. 
+            EEG could track it objectively, but classifiers that separate meditation from mind wandering work well on the person they were trained on and only modestly on anyone new[cite: 5]. 
+            A practical monitor can't be retrained for every user[cite: 5]. So we ask why transfer fails, and test two explanations[cite: 5].
+        </p>
+    </div>
+
+    <!-- EXPLANATIONS GRID -->
+    <div class="people-grid" style="margin-top: 30px;">
+        <article class="member-card">
+            <div class="member-info">
+                <span>EXPLANATION 01</span>
+                <h3>Individual Signature</h3>
+                <p>Everyone's brain changes in its own way[cite: 5]. Nothing transfers between people[cite: 5].</p>
+            </div>
+        </article>
+
+        <article class="member-card">
+            <div class="member-info">
+                <span>EXPLANATION 02</span>
+                <h3>Shared Signature, Individual Scale</h3>
+                <p>Brains change in a common direction, but by different amounts[cite: 5].</p>
+            </div>
+        </article>
+    </div>
+
+
+    <!-- RESEARCH QUESTION -->
+    <div class="research-section-heading" style="margin-top: 90px;">
+        <div class="research-label">
+            RESEARCH QUESTION
+        </div>
+        <h2>
+            Our Core Question
+        </h2>
+        <p>
+            Is meditation's EEG signal specific to each individual, or shared but too faint to read reliably across people[cite: 5]?
+        </p>
+    </div>
+
+
+    <!-- APPROACH -->
+    <div class="research-section-heading" style="margin-top: 90px;">
+        <div class="research-label">
+            METHODOLOGY
+        </div>
+        <h2>
+            Our Approach
+        </h2>
+        <p>
+            We process raw EEG scalp recordings from two open datasets through one shared clean-up (same filters, re-referencing, and eye/muscle artifact removal for everyone) to extract brain-rhythm features (share of power in each frequency band, per electrode)[cite: 5]. 
+        </p>
+    </div>
+
+    <!-- DATASETS GRID -->
+    <div class="people-grid">
+        <article class="member-card">
+            <div class="member-info">
+                <span>DATASET A</span>
+                <h3>Block Design</h3>
+                <p>
+                    Practitioners of three traditions (Himalayan Yoga, Vipassana, Isha Shoonya) and non-meditators alternate between meditating and deliberately letting thoughts wander[cite: 5].
+                </p>
+            </div>
+        </article>
+
+        <article class="member-card">
+            <div class="member-info">
+                <span>DATASET B</span>
+                <h3>Experience Sampling</h3>
+                <p>
+                    Meditators are interrupted at random moments and report whether they were meditating or mind wandering[cite: 5].
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <!-- INVESTIGATED QUESTIONS GRID -->
+    <div class="research-section-heading" style="margin-top: 80px;">
+        <h2>Key Questions Evaluated</h2>
+    </div>
+    <div class="people-grid">
+        <article class="member-card">
+            <div class="member-info">
+                <span>Q1</span>
+                <h3>Direction</h3>
+                <p>Does the same rhythm change the same way in most people[cite: 5]?</p>
+            </div>
+        </article>
+
+        <article class="member-card">
+            <div class="member-info">
+                <span>Q2</span>
+                <h3>Transfer</h3>
+                <p>Does a model trained on others recognise meditation in a new person[cite: 5]?</p>
+            </div>
+        </article>
+
+        <article class="member-card">
+            <div class="member-info">
+                <span>Q3</span>
+                <h3>Personalise</h3>
+                <p>How much of a new person's own data does it take to adapt[cite: 5]?</p>
+            </div>
+        </article>
+    </div>
+
+
+    <!-- FINDINGS -->
+    <div class="research-section-heading" style="margin-top: 100px;">
+        <div class="research-label">
+            RESULTS
+        </div>
+        <h2>
+            What We're Finding
+        </h2>
+    </div>
+
+    <div class="people-grid">
+        <article class="member-card">
+            <div class="member-info">
+                <span>FINDING 01</span>
+                <h3>A Shared Direction</h3>
+                <p>
+                    Theta rhythm power rises during meditation in most people, across traditions and both datasets, and in non-meditators focusing on the breathing techniques[cite: 5]. It reflects the meditative state, not years of practice[cite: 5].
+                </p>
+            </div>
+        </article>
+
+        <article class="member-card">
+            <div class="member-info">
+                <span>FINDING 02</span>
+                <h3>A Genuine Brain Rhythm</h3>
+                <p>
+                    The increase survives separating true oscillations from the spectrum's background slope[cite: 5].
+                </p>
+            </div>
+        </article>
+
+        <article class="member-card">
+            <div class="member-info">
+                <span>FINDING 03</span>
+                <h3>An Individual Size</h3>
+                <p>
+                    The shift is small and varies widely between people[cite: 5]. A one-size-fits-all model works above chance but modestly, levels off as more people are added, and succeeds mostly for those with a strong shift[cite: 5].
+                </p>
+            </div>
+        </article>
+
+        <article class="member-card">
+            <div class="member-info">
+                <span>FINDING 04</span>
+                <h3>Calibration Helps, at a Price</h3>
+                <p>
+                    A person's own data improves the model, but much of the early gain is learning the person; meditation-specific gains need minutes, not seconds[cite: 5]. We combine a population model learned from everyone else with a few minutes of the new person's EEG to create a personalised model[cite: 5].
+                </p>
+            </div>
+        </article>
+    </div>
+
+
+    <!-- TAKEAWAY -->
+    <div class="research-section-heading" style="margin-top: 100px;">
+        <div class="research-label">
+            CONCLUSION
+        </div>
+        <h2>
+            Takeaway
+        </h2>
+        <p>
+            Meditation leaves a shared EEG signature whose strength is specific to the individual subject[cite: 5]. Practical monitoring should pair a common model with short personal calibration[cite: 5].
+        </p>
+    </div>
+
+
+    <!-- TEAM MEMBERS -->
+    <div class="research-section-heading" style="margin-top: 100px;">
+        <div class="research-label">
+            TEAM
+        </div>
+        <h2>
+            Team Members
+        </h2>
+    </div>
+
+    <div class="people-grid">
+        <article class="member-card">
+            <div class="member-info">
+                <span>TEAM</span>
+                <h3>
+                    Team Pragnya
+                </h3>
+                <p class="member-position">
+                    HTI Lab, Plaksha University[cite: 5]
+                </p>
+            </div>
+        </article>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="research-footer">
+    <div class="research-footer-content">
+        <div>
+            <h3>
+                HTI LAB
+            </h3>
+            <p>
+                Human-Technology Interaction Lab<br>
+                Plaksha University
+            </p>
+        </div>
+    </div>
+
+    <div class="research-footer-bottom">
+        © 2026 Human-Technology Interaction Lab, Plaksha University.
+    </div>
+</footer>
+
+</body>
+</html>
