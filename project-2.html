@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +12,7 @@
     >
 
     <title>
-        Dark Pattern
-        | HTI Lab
+        ATLAS | HTI Lab
     </title>
 
     <link
@@ -22,9 +22,7 @@
 
 </head>
 
-
 <body>
-
 
 <header class="research-navbar">
 
@@ -36,7 +34,6 @@
         >
 
     </a>
-
 
     <nav>
 
@@ -56,33 +53,23 @@
             </li>
 
             <li>
-                <a href="people.html">
-                    People
-                </a>
+                <a href="people.html">People</a>
             </li>
 
             <li>
-                <a href="gallery.html">
-                    Gallery
-                </a>
+                <a href="gallery.html">Gallery</a>
             </li>
 
             <li>
-                <a href="publications.html">
-                    Publications
-                </a>
+                <a href="publications.html">Publications</a>
             </li>
 
             <li>
-                <a href="news.html">
-                    News
-                </a>
+                <a href="news.html">News</a>
             </li>
 
             <li>
-                <a href="contact.html">
-                    Contact
-                </a>
+                <a href="contact.html">Contact</a>
             </li>
 
         </ul>
@@ -92,6 +79,7 @@
 </header>
 
 
+<!-- HERO SECTION -->
 
 <section class="research-hero">
 
@@ -102,11 +90,14 @@
         </div>
 
         <h1>
-            Dark Pattern
+            ATLAS
         </h1>
 
         <p>
-          Measure how cognitive load affects the detection of AI dark patterns and understand when and why users fail to notice manipulative AI behavior. 
+            Adaptive Technology for Location and Spatial Support:
+            An intelligent, low-cost wearable navigation system
+            designed to provide real-time obstacle awareness and
+            directional guidance to visually impaired individuals.
         </p>
 
     </div>
@@ -114,9 +105,12 @@
 </section>
 
 
+<!-- PROJECT DETAILS -->
 
 <section class="projects-section">
 
+
+    <!-- ABSTRACT -->
 
     <div class="research-section-heading">
 
@@ -129,12 +123,243 @@
         </h2>
 
         <p>
-            AI-driven dark patterns manipulate user decisions, but the psychological conditions enabling this deception remain understudied. 
-            This study evaluates how cognitive load impacts user detection of manipulative AI behaviors. In a randomized controlled experiment ($N = 280$), 
-            participants interacted with deceptive AI interfaces under low, moderate, and high cognitive loads. High cognitive load reduced dark pattern 
-            detection by 42% and significantly increased compliance. Behavioral and eye-tracking data reveal that cognitive depletion forces 
-            reliance on System 1 heuristic processing, rendering users blind to manipulative framing and deceptive defaults. These findings prove that 
-            vulnerability to AI dark patterns is situational, underscoring the need for cognitive-aware interface safeguards and policy interventions.
+            ATLAS (Adaptive Technology for Location and Spatial
+            Support) is an assistive wearable navigation system
+            designed to improve independent mobility for visually
+            impaired individuals.
+
+            The system combines computer vision and depth sensing
+            to provide real-time environmental awareness without
+            depending on pre-built maps, cloud services, or
+            expensive depth-sensing hardware.
+
+            Using two VL53L5CX multizone Time-of-Flight (ToF)
+            sensors, ATLAS generates an 8×16 depth matrix with
+            a 90-degree field of view to identify structural
+            hazards such as stairs, drop-offs, and walls.
+
+            A USB camera connected to a Raspberry Pi 5 runs
+            YOLOv8 for real-time semantic obstacle detection,
+            identifying objects such as people, cars, and chairs.
+
+            A spatial fusion engine combines visual object
+            detection with depth information to estimate both
+            obstacle identity and distance.
+
+            The system delivers contextual audio alerts and
+            directional guidance, functioning as a digital
+            "guide dog" to support safer and more independent
+            navigation.
+        </p>
+
+    </div>
+
+
+    <!-- PROBLEM STATEMENT -->
+
+    <div class="research-section-heading"
+         style="margin-top: 80px;">
+
+        <div class="research-label">
+            RESEARCH MOTIVATION
+        </div>
+
+        <h2>
+            The Problem
+        </h2>
+
+        <p>
+            How can we build an intelligent, low-cost wearable
+            navigation system that delivers real-time obstacle
+            awareness and directional guidance to visually
+            impaired individuals without pre-built maps,
+            cloud dependency, or expensive depth hardware?
+
+            Existing navigation approaches can face limitations
+            in providing detailed real-time spatial awareness
+            of nearby obstacles and environmental hazards.
+
+            ATLAS aims to address this challenge through
+            multimodal sensing, computer vision, and
+            real-time spatial understanding.
+        </p>
+
+    </div>
+
+
+    <!-- SYSTEM INTEGRATION -->
+
+    <div class="research-section-heading"
+         style="margin-top: 80px;">
+
+        <div class="research-label">
+            SYSTEM ARCHITECTURE
+        </div>
+
+        <h2>
+            Core Integrations
+        </h2>
+
+        <p>
+            ATLAS integrates depth sensing, visual intelligence,
+            spatial processing, and audio feedback into a
+            unified wearable navigation system.
+        </p>
+
+    </div>
+
+
+    <!-- INTEGRATION 1 -->
+
+    <div class="research-section-heading"
+         style="margin-top: 45px;">
+
+        <h3>
+            01. Dual Time-of-Flight (ToF) Depth Matrix
+        </h3>
+
+        <p>
+            The system uses two VL53L5CX multizone
+            Time-of-Flight sensors operating on dual I2C buses.
+
+            Their depth measurements are combined to generate
+            a seamless 8×16 depth matrix with a 90-degree
+            field of view.
+
+            This enables the detection of structural hazards
+            such as stairs, drop-offs, and walls.
+        </p>
+
+    </div>
+
+
+    <!-- INTEGRATION 2 -->
+
+    <div class="research-section-heading"
+         style="margin-top: 45px;">
+
+        <h3>
+            02. Real-Time Semantic AI (YOLOv8)
+        </h3>
+
+        <p>
+            A USB camera provides visual input to a lightweight
+            YOLOv8 neural network running on a Raspberry Pi 5.
+
+            The model identifies surrounding objects and
+            obstacles, including people, cars, and chairs,
+            in real time.
+
+            This provides semantic information about the
+            user's surrounding environment.
+        </p>
+
+    </div>
+
+
+    <!-- INTEGRATION 3 -->
+
+    <div class="research-section-heading"
+         style="margin-top: 45px;">
+
+        <h3>
+            03. Spatial Fusion Engine
+        </h3>
+
+        <p>
+            The spatial fusion engine combines visual
+            information from YOLOv8 with depth measurements
+            from the ToF sensors.
+
+            It overlays 2D AI bounding boxes onto the
+            3D ToF depth matrix.
+
+            This creates geometry-aware semantic mapping,
+            allowing the system to understand both what
+            an obstacle is and how far away it is.
+        </p>
+
+    </div>
+
+
+    <!-- INTEGRATION 4 -->
+
+    <div class="research-section-heading"
+         style="margin-top: 45px;">
+
+        <h3>
+            04. Multi-Modal Audio Feedback
+        </h3>
+
+        <p>
+            ATLAS provides contextual audio alerts and
+            voice instructions to communicate environmental
+            information to the user.
+
+            The system uses eSpeak-NG for natural voice
+            guidance and a speaker module with a MAX98357A
+            amplifier to generate audio cues.
+
+            For example, the system can provide an alert:
+
+            "Caution! Person very close, 12cm ahead."
+
+            These audio instructions help users understand
+            nearby obstacles and navigate their surroundings.
+        </p>
+
+    </div>
+
+
+    <!-- SYSTEM OVERVIEW -->
+
+    <div class="research-section-heading"
+         style="margin-top: 90px;">
+
+        <div class="research-label">
+            TECHNOLOGY
+        </div>
+
+        <h2>
+            Technology Stack
+        </h2>
+
+        <p>
+            The system brings together embedded hardware,
+            computer vision, depth sensing, spatial processing,
+            and audio technologies.
+        </p>
+
+        <p style="margin-top: 25px;">
+
+            <strong>Hardware:</strong>
+            Raspberry Pi 5, Dual VL53L5CX ToF Sensors,
+            USB Camera, MAX98357A Amplifier and Speaker.
+
+        </p>
+
+        <p>
+
+            <strong>AI and Computer Vision:</strong>
+            YOLOv8, Real-Time Object Detection,
+            Semantic Mapping and Spatial Fusion.
+
+        </p>
+
+        <p>
+
+            <strong>Embedded Systems:</strong>
+            Python, Dual I2C Communication,
+            Sensor Integration and Real-Time Processing.
+
+        </p>
+
+        <p>
+
+            <strong>Audio:</strong>
+            eSpeak-NG, Voice Guidance and Contextual
+            Audio Alerts.
+
         </p>
 
     </div>
@@ -142,139 +367,28 @@
 
     <!-- TEAM -->
 
-    <div class="research-section-heading">
+    <div class="research-section-heading"
+         style="margin-top: 100px;">
 
         <div class="research-label">
             TEAM
         </div>
 
         <h2>
-            Team Members
-        </h2>
-
-    </div>
-
-
-    <div class="people-grid">
-
-
-        <article class="member-card">
-
-            <div class="member-info">
-
-                <span>
-                    SUPERVISOR
-                </span>
-
-                <h3>
-                    Prof. Siddharth
-                </h3>
-
-                <p class="member-position">
-                    Associate Professor
-                </p>
-
-            </div>
-
-        </article>
-
-
-        <article class="member-card">
-
-            <div class="member-info">
-
-                <span>
-                    RESEARCH FELLOW
-                </span>
-
-                <h3>
-                    Vijay Shete
-                </h3>
-
-                <!-- <p class="member-position">
-                    Research Fellow
-                </p> -->
-
-            </div>
-
-        </article>
-
-
-        <article class="member-card">
-
-            <div class="member-info">
-
-                <span>
-                    STUDENT
-                </span>
-
-                <h3>
-                    Proshita Agarwal
-                </h3>
-
-                <!-- <p class="member-position">
-                    Research Student
-                </p> -->
-
-            </div>
-
-        </article>
-
-        <article class="member-card">
-
-            <div class="member-info">
-
-                <span>
-                    ALUMINI
-                </span>
-
-                <h3>
-                    Zoya Ghoshal
-                </h3>
-
-                <!-- <p class="member-position">
-                    Research Student
-                </p> -->
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-
-    <!-- SUPERVISOR -->
-
-    <!-- <div
-        class="research-section-heading"
-        style="margin-top: 120px;"
-    >
-
-        <div class="research-label">
-            SUPERVISION
-        </div>
-
-        <h2>
-            Supervisor
+            Project Team
         </h2>
 
         <p>
-            Prof. Siddharth<br>
-            Associate Professor<br>
-            School of Computer Science and Artificial Intelligence<br>
-            Plaksha University
+            The team information will be updated here.
         </p>
 
-    </div> -->
+    </div>
 
 
     <!-- PUBLICATION -->
 
-    <div
-        class="research-section-heading"
-        style="margin-top: 80px;"
-    >
+    <div class="research-section-heading"
+         style="margin-top: 80px;">
 
         <div class="research-label">
             RESEARCH OUTPUT
@@ -285,8 +399,8 @@
         </h2>
 
         <p>
-            Publication associated with this project will be
-            listed here once available.
+            Publications associated with this project
+            will be listed here once available.
         </p>
 
     </div>
@@ -295,6 +409,7 @@
 </section>
 
 
+<!-- FOOTER -->
 
 <footer class="research-footer">
 
